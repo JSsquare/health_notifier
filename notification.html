@@ -1,0 +1,9 @@
+<div id="notificationContainer" ng-if="notifier.toggler">		
+ <p class="headers">Notifications <a ng-click="notifier.clearAll(list);">Clear All</a></p>						
+	<div id="notificationsBody" class="notifierBox" ng-repeat="list in notifier.details" >	
+		<i class="closeIcon fa fa-times" ng-click="notifier.removeItem($index)"></i>	
+		<i ng-class="notifier.typeClassDecider(list.type)">{{list.patient_name}}</i> 
+		<p class="messageText">{{list.message}}</p> 
+		<p class="dateStyle">{{list.timestamp | date : "medium"}}</p> 	
+	</div>			
+</div>

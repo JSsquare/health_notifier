@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Reflexion Health</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="main.css"/>    
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="healthReview">
+   <div ng-controller="notificationController as notifier">
+    <header>
+      <nav class="group">
+        <ul class="nav-list left">
+          <li class="nav-list-item search">
+            <i class="fa fa-search"></i>
+          </li>
+          <li class="nav-list-item">
+            <span>Patients</span>
+          </li>
+          <li class="nav-list-item">
+            <span>Protocols</span>
+          </li>
+          <li class="nav-list-item">
+            <span>Clinicians</span>
+          </li>
+        </ul>
+        <ul class="nav-list right">
+          <li class="nav-list-item notifications">
+            <i class="fa fa-bell-o" ng-click="notifier.toggler=!notifier.toggler" ng-class="{badge: notifier.details.length}"></i>                
+          </li> 
+          <li class="nav-list-item">
+            <span class="clinician-name">John Doe</span><i class="fa fa-chevron-down"></i>
+          </li>
+          <notification></notification>          
+        </ul>        
+      </nav>
+    </header>
+   </div>
+  </body>
+</html>

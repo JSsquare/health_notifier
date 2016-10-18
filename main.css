@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #eff0f0;
+}
+header {
+  background-color: #2d4d6d
+}
+nav {
+  width: 1024px;
+  margin: 0 auto;
+}
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list-item {
+  color: white;
+  display: inline-block;
+  padding: 25px;
+}
+
+.search {
+  background-color: #1d324a;
+}
+
+.clinician-name {
+  margin-right: 10px
+}
+
+/* utility classes*/
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+.group:after {
+    clear: both;
+}
+.badge{      
+    background: rgba(255, 0, 0, 1);
+    height:0.5rem;
+    top:2rem;
+    right:1.5rem;
+    width:0.5rem;
+    text-align: center;
+    line-height: 2rem;;
+    font-size: 1rem;
+    border-radius: 50%;
+    color:white;
+    border:1px solid red;
+}
+#notificationsBody {
+            padding: 20px 0px 0px 0px !important;
+            min-height:80px;
+}
+#notificationContainer {
+            background-color: #eff0f0;
+            border: 1px solid #E6E6E6;
+            -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .25);
+            overflow: visible;
+            position: absolute;
+            top: 76px;
+            left: 160px;
+            margin-left: 50%;
+            width: 350px;
+            z-index: 1;            
+}
+#notificationContainer:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: -10px;
+            width: 0;
+            height: 0;
+            color: transparent;
+            border: 10px solid black;
+            border-color: transparent transparent #F2F2F2;
+            margin-top: -20px;
+            margin-left: 50%;
+}
+.notifierBox{            
+            background-color: white;
+            margin: 10px;  
+            -webkit-box-shadow: 4px 4px 5px 0px rgba(120,115,120,1);
+            -moz-box-shadow: 4px 4px 5px 0px rgba(120,115,120,1);
+            box-shadow: 6px 4px 5px 0px rgba(120,115,120,1);
+}
+.headers{
+            color: #2d4d6d;
+            text-align: center;
+}
+.closeIcon{
+            right:12px;
+            position: absolute;            
+          }
+
+.dateStyle{
+            color: #d0d2d2;
+            font-family: monospace;
+            margin: auto;
+            padding: 10px;
+}
+
+.messageText{
+             color: #97a8bc;
+             margin: auto;
+             padding: 10px;
+           }
+
+.reviewNotification{
+            color: #1fb0f8;
+            margin: auto;
+            padding: 10px;
+          }
+.painNotification{
+            color: #fd571d;
+            margin: auto;
+            padding: 10px;
+          }
+.troubleNotification{
+            color: #ffb003;
+            margin: auto;
+            padding: 10px;
+          }
